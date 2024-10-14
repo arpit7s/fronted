@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent {
+            position: relative;
+            width: 120px;
+            height: 620px;
+            border-top: none;
+            border: 2px solid rgb(247, 246, 246);
+        }
+
+        div img {
+            margin-top: 30px;
+            margin-left: 20px;
+            height: 100px;
+            width: 130px;
+        }
+
+        .side-bar {
+            width: 100px;
+            margin: 10px;
+        }
+
+        .side-bar img {
+            height: 30px;
+            width: 40px;
+            margin-left: 10px;
+            cursor: pointer;
+            opacity: 0.5;
+
+        }
+
+        .side-bar p {
+            width: 100px;
+            margin-left: 10px;
+            cursor: pointer;
+            opacity: 1;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sec {
+
+            width: 100%;
+            height: 350px;
+            background-color: #3e2b1a;
+            display: flex;
+        }
+
+        .sec img {
+
+            height: 50px;
+            width: 50px;
+            border: 1px solid #49331f;
+            background-color: #4e443a;
+            border-radius: 10px;
+            margin-top: 80px;
+            border-style: none;
+
+        }
+
+        .sociel {
+            margin-left: 60px;
+            cursor: pointer;
+        }
+
+        .language {
+            display: flex;
+            margin-left: 22px;
+
+        }
+
+        .language p {
+            display: flex;
+            margin-top: 15px;
+            font-size: 16px;
+            padding: 12px;
+            border: 2px solid #b39d8a;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.5rem;
+            text-decoration: none;
+            color: #b39d8a;
+            opacity: 1;
+            padding: 0.8125rem;
+        }
+
+        .language>p:hover {
+            color: white;
+            cursor: pointer;
+        }
+
+        .language p:first-child {
+            color: white;
+        }
+
+        .left-side ul {
+
+            list-style: none;
+            justify-content: center;
+            margin-top: 80px;
+            margin-left: 10rem;
+            color: #999999;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        ul li {
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        ul li::before {
+            content: "> ";
+            color: yellow;
+            opacity: 0.8;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .feedback-tab {
+            position: fixed;
+            right: 0;
+            top: 50%;
+            transform: translateY(-100%);
+            background-color: #3a2a1a;
+            color: white;
+            width: 40px;
+            height: 120px;
+            font-size: 14px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            cursor: pointer;
+            z-index: 1000;
+         
+        }
+
+        .feedback-tab:hover {
+            background-color: #2e1f14;
+
+        }
+
+        .arrow ::before{
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid yellow;
+            margin-top: 5px;
+        }
+         .feedback-tab::before {
+            content: "< ";
+            color: yellow;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="parent">
+            <div class="maggi">
+                <img src="https://www.maggi.in/sites/default/files/maggi_logo_png_0.png" alt="">
+            </div>
+            <div class="side-bar">
+                <img src="https://www.maggi.in/sites/default/files/2020-01/01_Rezepte.svg" alt="">
+                <p>Recipes</p>
+                <img src="https://www.maggi.in/sites/default/files/2019-12/05_Maggi.svg" alt="">
+                <p>Maggi</p>
+                <img src="https://www.maggi.in/sites/default/files/2022-12/LogoMealPlanner_0.svg" alt="">
+                <p>MyMenu Plan</p>
+                <img src="https://www.maggi.in/sites/default/files/2019-12/03_Suche_11.svg" alt="">
+                <p>Search</p>
+                <img src="https://www.maggi.in/sites/default/files/2020-07/MAGGI_Navigation_MyMaggi_0_0.svg" alt="">
+                <p>Login</p>
+            </div>
+        </div>
+        <div class="sec">
+            <div class="sociel">
+                <img src="https://www.maggi.in/sites/default/files/2020-01/facebook.svg" alt="Facebook">
+                <img src="https://www.maggi.in/sites/default/files/2020-01/youtube.svg" alt="youtube">
+                <img src="https://www.maggi.in/sites/default/files/2020-02/instagram.svg" alt="instagram">
+                <img src="https://www.maggi.in/sites/default/files/2020-03/Twitter%20%281%29.svg" alt="twitter">
+                <div class="language">
+                    <p>EN</p>
+                    <p>HI</p>
+                    <p>MR</p>
+                    <p>TE</p>
+                    <p>KN</p>
+                </div>
+
+            </div>
+            <div class="left-side">
+                <ul>
+                    <li>Contact Us</li>
+                    <li>Copyright</li>
+
+                </ul>
+            </div>
+            <div class="left-side">
+                <ul>
+                    <li>Terms ans Condition </li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="feedback-tab">
+                <span>FEEDBACK</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

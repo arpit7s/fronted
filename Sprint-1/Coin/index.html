@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Coin Switch Page</title>
+    <style>
+        img {
+            height: 50px;
+            margin-left: 50px;
+        }
+
+        #parent {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 10px;
+            margin-bottom: 20px;
+
+        }
+
+        #side-bar {
+            color: #000000;
+            font-family: sans-serif;
+            font-weight: 700;
+           
+        }
+
+        span {
+            margin-right: 50px;
+        }
+
+        button {
+            background-color: rgb(177 229 14);
+            padding: 15px;
+            border-radius: 15px;
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: none;
+            margin-right: 70px;
+        }
+
+        #image {
+            height: auto;
+            width: 100%;
+        }
+
+        #coin {
+            width: 95%;
+        }
+
+
+        #side-bar:hover {
+            cursor: pointer;
+        }
+
+        button:hover {
+
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <img src="https://coinswitch.co/_next/static/media/logo.01525825.svg" alt="coinSwitch">
+        <div id="side-bar">
+            <span>Products
+                <i  class="fa fa-angle-down"></i>
+            </span>
+            <span>Coins </span>
+            <span>Ventures</span>
+            <span>Blogs</span>
+            <span>Company
+                <i class="fa fa-angle-down"></i>
+            </span>
+            <button>Login To Pro</button>
+        </div>
+    </div>
+    <div id="coin">
+        <img id="image" src="coin.png" alt="">
+    </div>
+</body>
+
+</html>
