@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .heading {
+            background-color: rgb(245, 198, 205);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .btn {
+            background: #ED0311;
+            margin-left: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            color: white;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .navbar {
+            display: flex;
+        }
+
+        .navbar img {
+            width: 114px;
+            height: 40px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            list-style: none;
+            margin: 10px;
+            margin-left: 100px;
+            cursor: pointer;
+
+
+        }
+
+        nav ul :hover {
+            color: #ED0311;
+        }
+
+        ul li {
+            margin-left: 30px;
+        }
+
+        .right {
+
+            margin-left: 180px;
+        }
+
+        .earn {
+            background: #d6e2fa;
+            padding: 10px;
+            font-size: 15px;
+            text-transform: uppercase;
+            border-radius: 10px;
+            border: none;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+
+        .signup {
+            padding: 10px;
+            font-size: 15px;
+            text-transform: uppercase;
+            border-radius: 10px;
+            border: none;
+            margin-top: 5px;
+            border: 1px solid red;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        .signup:hover {
+            background-color: #ed0331;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .video {
+            width: 593px;
+            height: 329px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            margin: 50px;
+
+        }
+
+        .content p {
+            color: blue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 700;
+            font-size: 60px;
+        }
+
+        .content span {
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        .content btn {
+            background-color: blue;
+        }
+
+        .videos {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        .footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 31px;
+            background-color: rgb(67, 67, 238);
+          
+        }
+        .footer h2{
+            font-size: 30px;
+        }
+        .footer p{
+            margin-top: 10px;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conatiner">
+        <div class="heading">
+            <h3>Application for our 6th November Batches are now open!</h3>
+            <button class="btn">Apply Now </button>
+        </div>
+        <div class="navbar">
+            <img src="https://cdn.masaischool.com/masai-website/Masai_Logo_dark_web_b21aab8c62.webp" alt="">
+            <div class="left">
+                <nav>
+                    <ul>
+                        <li>COURSES</li>
+                        <li>FEES</li>
+                        <li>EVENTS</li>
+                        <li>LEARN</li>
+                        <li>SUCESS AND STORIES</li>
+                        <li>HIRE FROM US</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right">
+                <button class="earn">refer & earn</button>
+                <button class="signup">sign up</button>
+            </div>
+        </div>
+        <main>
+            <div class="content">
+                <p>Proof that dreams do come true</p>
+                <span>A testament to what’s possible</span>
+                <span>
+                    <button class="btn">Apply Now </button>
+                </span>
+            </div>
+            <div class="videos">
+                <video class='video'
+                    src="https://cdn.masaischool.com/masai-website/cab_driver_became_software_engineer_meet_ashish_raj_from_munger_bihar_1_1080p_808ebc1236.mp4"
+                    controls></video>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <h2>How is Masai Creating an Impact?</h2>
+                <p>4000 students placed across 1000+ companies</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
